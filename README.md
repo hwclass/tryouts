@@ -1,6 +1,6 @@
-#### Node development environments with Docker & git flow
+### Node development environments with Docker & git flow
 
-##### Git flow
+#### Git flow
 
 **Create repo**
 * Create directory and git init
@@ -56,23 +56,23 @@
 * git push origin v1.0.0
 
 **Hotfix from master**
-git checkout master
-git checkout -b hotfix/fix-foo
-git commit -m "Single foo after all"
-git checkout master
-git merge hotfix/fix-foo
-git push
-git tag v1.0.1
-git push origin v1.0.1
-git checkout develop
-git merge hotfix/fix-foo
-git push
+* git checkout master
+* git checkout -b hotfix/fix-foo
+* git commit -m "Single foo after all"
+* git checkout master
+* git merge hotfix/fix-foo
+* git push
+* git tag v1.0.1
+* git push origin v1.0.1
+* git checkout develop
+* git merge hotfix/fix-foo
+* git push
 
 **Clean after development and merging**
-git branch -d feature/foo
-git branch -d feature/bar
-git branch -d hotfix/fix-foo
-git checkout
+* git branch -d feature/foo
+* git branch -d feature/bar
+* git branch -d hotfix/fix-foo
+* git checkout
 logs:
   develop
 * master
